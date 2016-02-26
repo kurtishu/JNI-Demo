@@ -6,6 +6,7 @@ package com.dreamfactory.blutooth.library;
  */
 public class JNIUtil {
 
+    //测试方法
     public static native String getStringFromC();
 
     public static native byte[] convertSettingsBeforePassedToBluetooth(int[] arr);

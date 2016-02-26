@@ -37,7 +37,6 @@ JNIEXPORT jbyteArray JNICALL Java_com_dreamfactory_blutooth_library_JNIUtil_conv
     point[0] = 1;
     point[1] = 2;
 
-
     //返回该对象数组
     return result;
 
