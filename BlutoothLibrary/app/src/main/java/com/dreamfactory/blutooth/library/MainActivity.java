@@ -34,19 +34,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // 打Log测试程序
-        Log.i("Kurtis", JNIUtil.getStringFromC());
-        int[] args = new int[]{1, 2};
-
-        byte[] convertedSetting = JNIUtil.convertSettingsBeforePassedToBluetooth(args);
-        Log.i("Kurtis", "convertSettingsBeforePassedToBluetooth: result " + convertByteArrayToString(convertedSetting));
-        byte[] convertedOther = JNIUtil.convertOtherBeforePassedToBluetooth(args);
-        Log.i("Kurtis", "convertOtherBeforePassedToBluetooth: result: " + convertByteArrayToString(convertedOther));
-
-
-        byte[] bytes = new byte[]{1, 2};
-        Log.i("Kurtis", "convertSettingsFromBluetooth: result: " + convertIntArrayToString(JNIUtil.convertSettingsFromBluetooth(bytes)));
-        Log.i("Kurtis", "convertOtherFromBluetooth: result: " + convertIntArrayToString(JNIUtil.convertOtherFromBluetooth(bytes)));
+//        // 打Log测试程序
+//        Log.i("Kurtis", JNIUtil.getStringFromC());
+//        int[] args = new int[]{1, 2};
+//
+//        byte[] convertedSetting = JNIUtil.convertSettingsBeforePassedToBluetooth(args);
+//        Log.i("Kurtis", "convertSettingsBeforePassedToBluetooth: result " + convertByteArrayToString(convertedSetting));
+//        byte[] convertedOther = JNIUtil.convertOtherBeforePassedToBluetooth(args);
+//        Log.i("Kurtis", "convertOtherBeforePassedToBluetooth: result: " + convertByteArrayToString(convertedOther));
+//
+//
+//        byte[] bytes = new byte[]{1, 2};
+//        Log.i("Kurtis", "convertSettingsFromBluetooth: result: " + convertIntArrayToString(JNIUtil.convertSettingsFromBluetooth(bytes)));
+//        Log.i("Kurtis", "convertOtherFromBluetooth: result: " + convertIntArrayToString(JNIUtil.convertOtherFromBluetooth(bytes)));
 
     }
 
